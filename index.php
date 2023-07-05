@@ -14,6 +14,14 @@
 </head>
 <body>
     <div id="app">
+        <div class="row">
+            <div class="col-8">
+                <div  v-for="disk in disksList"class="card">
+                    {{ disk }}
+
+                </div>
+            </div>
+        </div>
         
     </div>
     
