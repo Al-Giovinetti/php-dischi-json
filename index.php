@@ -14,11 +14,16 @@
 </head>
 <body>
     <div id="app">
+        <header>
+
+        </header>
         <div class="row">
             <div class="col-8">
-                <div  v-for="disk in disksList"class="card">
-                    {{ disk }}
-
+                <div  v-for="disk in disksList"class="card col-4">
+                    <img :src="disk.poster" alt="">
+                    <h2>{{ disk.title }}</h2>
+                    <span>{{ disk.author }}</span>
+                    <span>{{ disk.year}}</span>
                 </div>
             </div>
         </div>
